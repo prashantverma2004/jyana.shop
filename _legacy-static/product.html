@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JYANA Personal Care</title>
+  <meta name="description" content="JYANA roll-on — 50 ml.">
+  <meta name="theme-color" content="#f7f3ec">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;350;400;450;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="product">
+  <div id="site-header"></div>
+
+  <main>
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="shop.html">Shop</a><span>/</span><span id="crumbName" aria-current="page"></span></nav>
+      <div class="pdp">
+        <div class="gallery" id="gallery"></div>
+        <div class="pdp-info" id="pdpInfo"></div>
+      </div>
+    </div>
+
+    <section class="section tight bg-cream">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow reveal">Key benefits</span>
+            <h2 class="reveal" style="--d:.1s">What it <em>does</em>.</h2>
+          </div>
+        </div>
+        <div class="benefit-row" id="pdpBenefits"></div>
+      </div>
+    </section>
+
+    <section class="section" id="pdpIngredients">
+      <div class="container">
+        <div class="ingredients" style="margin-top:0">
+          <div class="ingredients-media reveal-img" id="pdpIngMedia" style="background:var(--sage-soft)"></div>
+          <div>
+            <span class="eyebrow reveal">Ingredients</span>
+            <h2 class="reveal" style="--d:.1s">What's <em>inside</em>.</h2>
+            <div class="ing-list" id="pdpIngList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-sage-mist">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow reveal">How to use</span>
+            <h2 class="reveal" style="--d:.1s">A simple <em>ritual</em>.</h2>
+          </div>
+          <p class="lead reveal" style="--d:.2s">Ten seconds, every morning.</p>
+        </div>
+        <div class="steps" id="pdpSteps"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="related" id="related"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

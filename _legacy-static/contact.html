@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — JYANA Personal Care</title>
+  <meta name="description" content="Get in touch with JYANA Personal Care.">
+  <meta name="theme-color" content="#f7f3ec">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;350;400;450;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow reveal">Contact</span>
+          <h1 class="reveal" style="--d:.1s">We'd love to <em>hear from you</em>.</h1>
+          <p class="lead reveal" style="--d:.2s">Questions about an order, our roll-ons, or anything else — send us a note and we'll get back to you.</p>
+          <div class="contact-cards reveal" style="--d:.3s" id="contactCards"></div>
+          <p class="small reveal" style="--d:.35s;margin-top:24px">Looking for quick answers? <a class="link" href="index.html#faq">Read the FAQ</a></p>
+        </div>
+        <form class="reveal" style="--d:.2s" id="contactForm">
+          <div class="field-row">
+            <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" required autocomplete="name"></div>
+            <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required autocomplete="email"></div>
+          </div>
+          <div class="field">
+            <label for="c-topic">Topic</label>
+            <select id="c-topic" name="topic">
+              <option>Product question</option>
+              <option>My order</option>
+              <option>Wholesale & partnerships</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required></textarea></div>
+          <button class="btn" type="submit">Send message <svg class="arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h14.5M10.5 1l4 4-4 4"/></svg></button>
+          <div class="form-note" id="contactNote" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

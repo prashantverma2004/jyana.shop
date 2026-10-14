@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — JYANA Personal Care</title>
+  <meta name="description" content="Checkout — JYANA Personal Care.">
+  <meta name="theme-color" content="#f7f3ec">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;350;400;450;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="checkout">
+  <div id="site-header"></div>
+
+  <main>
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Checkout</span></nav>
+      <h1 style="margin:28px 0 clamp(32px,4vw,56px)">Checkout</h1>
+      <div class="checkout-grid">
+        <form id="checkoutForm">
+          <span class="opt-label">Contact</span>
+          <div class="field"><label for="co-email">Email</label><input id="co-email" type="email" required autocomplete="email"></div>
+          <div class="field"><label for="co-phone">Phone</label><input id="co-phone" type="tel" required autocomplete="tel"></div>
+          <span class="opt-label" style="margin-top:32px">Delivery</span>
+          <div class="field-row">
+            <div class="field"><label for="co-fn">First name</label><input id="co-fn" required autocomplete="given-name"></div>
+            <div class="field"><label for="co-ln">Last name</label><input id="co-ln" required autocomplete="family-name"></div>
+          </div>
+          <div class="field"><label for="co-addr">Address</label><input id="co-addr" required autocomplete="street-address"></div>
+          <div class="field-row">
+            <div class="field"><label for="co-city">City</label><input id="co-city" required autocomplete="address-level2"></div>
+            <div class="field"><label for="co-pin">PIN code</label><input id="co-pin" required autocomplete="postal-code" inputmode="numeric"></div>
+          </div>
+          <div class="field"><label for="co-state">State</label><input id="co-state" required autocomplete="address-level1"></div>
+          <button class="btn block" type="submit" style="margin-top:12px">Continue to payment <svg class="arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h14.5M10.5 1l4 4-4 4"/></svg></button>
+          <div class="notice" id="checkoutNote" hidden>
+            <b>Payments aren't connected yet.</b> This checkout is a front-end template. Connect a payment provider (Shopify, Razorpay, Stripe…) in <code>assets/js/main.js</code> → <code>renderCheckout()</code> to take live orders.
+          </div>
+        </form>
+        <aside class="summary">
+          <h3>Order summary</h3>
+          <div id="summaryList"></div>
+          <div class="summary-rows">
+            <div><span>Subtotal</span><span id="sumSubtotal"></span></div>
+            <div><span>Shipping</span><span class="small">Calculated at next step</span></div>
+            <div class="total"><span>Total</span><strong id="sumTotal"></strong></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
